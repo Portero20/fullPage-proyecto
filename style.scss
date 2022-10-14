@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@200&display=swap');
+
+h1{
+
+    font-family: 'Monserrat',sans-serif;
+    text-align: center;
+    color: white;
+
+}
+
+h2{
+
+    text-align: center;
+    margin-left: 2em;
+    font-size: 2em;
+    color: #A30015;
+    font-family: 'Monserrat',sans-serif;
+
+}
+
+.s1{
+
+    background: url("./img/lego-office.jpg");
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: rgba(0,0,0,0.7);
+    position: relative;
+
+    .flecha{
+
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 16.5%;
+        font-size: 40px;
+        margin-bottom: 2em;
+        animation: bajar-subir 1s ease infinite;
+
+    }
+
+}
+
+.s2{
+
+    background: url("./img/lego-office2.jpg");
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: rgba(0,0,0,0.7);
+
+    h1{
+
+        text-align: center;
+        margin-left: 2em;
+        font-size: 2em;
+
+    }
+
+}
+
+.s3{
+
+    background: url("./img/lego-police.jpg");
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: rgba(0,0,0,0.7);
+
+    h1{
+
+        text-align: center;
+        margin-left: 2em;
+        font-size: 2em;
+
+    }
+
+
+}
+
+
+
+#fp-nav{
+
+    ul{
+
+        li{
+
+            a{
+
+                span{
+
+                    background-color: white !important;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.nav{
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    padding: 5px 2px;
+
+
+    a{
+
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+        text-transform: uppercase;
+        font-size: 19px;
+        transition: all .6s ease;
+        font-family: 'Oswald',sans-serif;
+
+
+    }
+
+    .contenedorLogo{
+
+        .logo{
+
+            height: 50px;
+            transition: all .2s;
+    
+            &:hover{
+    
+                transform: scale(1.1);
+    
+            }
+    
+        }
+
+    }
+
+    li{
+
+        display: inline-block;
+        list-style-type: none;
+
+
+
+    }
+
+    li.active{
+
+        border-bottom: 1px solid white;
+
+    }
+
+    .menu{
+
+        a{
+
+            transition: .5s ease;
+            margin: 10px;
+            padding: 0;
+
+        }
+
+        li.active a{
+
+            color:orange ;
+
+        }
+
+
+    }
+
+}
+
+
+.fp-slidesNav.fp-bottom{
+
+    margin-left: 1em !important;
+
+}
+
+@keyframes bajar-subir{
+
+    0%{
+        transform: translateY(20px);
+    }
+    25%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(28px);
+    }
+
+}

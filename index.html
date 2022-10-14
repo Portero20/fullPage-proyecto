@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.css"
+        integrity="sha512-NGRhMiWY9pf5z8PLens7/u+LLwIPAu1dhJ7u9sHRWIo8TKrVbKiWlRdYRH3pVDCZA10zmobo+PBLGeLOREklBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./img/lego.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Lego</title>
+</head>
+
+<body>
+
+
+    <nav class="nav">
+
+        <div class="contenedorLogo">
+            <a href="index.html"><img src="./img/lego-black-white.png" alt="" class="logo"></a>
+        </div>
+
+
+        <ul id="menu" class="menu">
+            <li data-menuanchor="lego" class="active">
+
+                <a href="#lego">Lego</a>
+
+            </li>
+            <li data-menuanchor="star-wars">
+
+                <a href="#star-wars">Star Wars</a>
+
+            </li>
+            <li data-menuanchor="lego-police">
+
+                <a href="#lego-police">Lego Police</a>
+
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <div id="fullPage">
+
+        <div class="section s1">
+
+            <div class="slide">
+
+                <h1>Lego 🧱</h1>
+
+                <a href="#star-wars"><i class="fa-solid fa-arrow-down flecha"></i></a>
+
+            </div>
+
+            <div class="slide">
+
+                <h1>Solo lo mejor es suficientemente bueno</h1>
+
+            </div>
+
+            <div class="slide">
+
+                <h1>Lego proviene de una contracción de la frase danesa LEG GODT, que significa:</h1>
+                <h2>Jugar bien</h2>
+
+            </div>
+
+        </div>
+
+        <div class="section s2">
+
+            <h1>Lego Star Wars 🌌</h1>
+
+        </div>
+
+        <div class="section s3">
+
+            <h1>Lego Police Force 👮🏻‍♀️</h1>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js"
+        integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        new fullpage('#fullPage', {
+
+            autoScrolling: true,
+            navigation: true,
+            anchors: ['lego', 'star-wars', 'lego-police'],
+            navigationTooltips: ['Lego', 'Star Wars', 'Lego Police'],
+            showActiveTooltip: false,
+            scrollingSpeed: 1000,
+            controlArrows: false,
+            slidesNavigation: true,
+            easing: 'easeInOutCubic',
+            loopBottom: false,
+            menu: '#menu',
+
+
+        })
+    </script>
+
+    <script src="https://kit.fontawesome.com/0dcf698896.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
